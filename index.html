@@ -13,6 +13,10 @@
   <!-- plugin css for this page -->
   <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <!-- End plugin css for this page -->
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
   <!-- inject:css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
@@ -63,7 +67,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#chapter1">
-              <i class="mdi mdi-home menu-icon"></i>
+              <i class="mdi mdi-download menu-icon"></i>
               <span class="menu-title">Chapter1</span>
             </a>
           </li>
@@ -87,7 +91,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" href="index.html">
               <i class="mdi mdi-chart-pie menu-icon"></i>
               <span class="menu-title">Charts</span>
             </a>
@@ -164,13 +168,13 @@
                   <div class="card-body dashboard-tabs p-0">
                     <ul class="nav nav-tabs px-4" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                        <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">3D Printer</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Sales</a>
+                        <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Arduino</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">Purchases</a>
+                        <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">Raspberry Pie</a>
                       </li>
                     </ul>
                     <div class="tab-content py-0 px-0">
@@ -509,6 +513,11 @@
   <script src="js/data-table.js"></script>
   <script src="js/jquery.dataTables.js"></script>
   <script src="js/dataTables.bootstrap4.js"></script>
+  <script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+  </script>
   <!-- End custom js for this page-->
 </body>
 
