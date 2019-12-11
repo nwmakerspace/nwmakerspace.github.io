@@ -21,7 +21,7 @@
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" >
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
           <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
@@ -38,99 +38,9 @@
               </li>
             </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-message-text mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
-              <a class="dropdown-item">
-                <div class="item-thumbnail">
-                    <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="item-content flex-grow">
-                  <h6 class="ellipsis font-weight-normal">David Grey
-                  </h6>
-                  <p class="font-weight-light small-text text-muted mb-0">
-                    The meeting is cancelled
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item">
-                <div class="item-thumbnail">
-                    <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="item-content flex-grow">
-                  <h6 class="ellipsis font-weight-normal">Tim Cook
-                  </h6>
-                  <p class="font-weight-light small-text text-muted mb-0">
-                    New product launch
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item">
-                <div class="item-thumbnail">
-                    <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="item-content flex-grow">
-                  <h6 class="ellipsis font-weight-normal"> Johnson
-                  </h6>
-                  <p class="font-weight-light small-text text-muted mb-0">
-                    Upcoming board meeting
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown mr-4">
-            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-              <a class="dropdown-item">
-                <div class="item-thumbnail">
-                  <div class="item-icon bg-success">
-                    <i class="mdi mdi-information mx-0"></i>
-                  </div>
-                </div>
-                <div class="item-content">
-                  <h6 class="font-weight-normal">Application Error</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Just now
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item">
-                <div class="item-thumbnail">
-                  <div class="item-icon bg-warning">
-                    <i class="mdi mdi-settings mx-0"></i>
-                  </div>
-                </div>
-                <div class="item-content">
-                  <h6 class="font-weight-normal">Settings</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Private message
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item">
-                <div class="item-thumbnail">
-                  <div class="item-icon bg-info">
-                    <i class="mdi mdi-account-box mx-0"></i>
-                  </div>
-                </div>
-                <div class="item-content">
-                  <h6 class="font-weight-normal">New user registration</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    2 days ago
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
+                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-download text-muted"></i>
+                  </button>
           
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
@@ -239,67 +149,47 @@
                         <a href="#" target="_blank" class="btn btn-outline-light mr-2 bg-gradient-danger border-0">Book Orientation Session</a>
                         
                       </div>
+                      
                     </div>
+                    <div id="overview" ></div>
                   </div>
                 </div>
               </div>
           <!-- Notification End -->
 
           <!-- Overview Start -->
-          <i id="overview" class="mdi mdi-book-open-page-variant text-muted"></i>
-          <div class="mr-md-3 mr-xl-5">
+          <div class="mr-md mr-xl-5">
               <div class="row">
                   <div class="col-md-12 grid-margin stretch-card">
                       <div class="card">
                           <div class="card-body">
-                              <h3>Overview</h3>
+                              <h2><i id="overview" class="mdi mdi-book-open-page-variant text-muted"></i> Overview</h3>
                           <p class="mb-4">The Neill-Wycik Makerspace is an engineering design space that allow members of the co-op to design and create their own projects that involl1e the use of electronics, computer aided design software (also known as CAD), and 3D printed ABS or PLA material. Due to the nature of the components inside the space, both in terms of cost and safety, it is necessary to lay out the ground rules for usage of the space to ensure. proper training of students who wish to use the space and minimize the risk of injuries and property damage as a result.</p>
-                          </div>
+                          <div id="chapter1" ></div>
+                        </div>
+                          
                     </div>
                   </div>
               </div>
+              
           </div>
           <!-- Overview End -->
-          
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-              <div class="d-flex justify-content-between flex-wrap">
-                <div class="d-flex align-items-end flex-wrap">
-                  <div class="mr-md-3 mr-xl-5">
-                    <p class="mb-md-0"></p>
-                  </div>
-                  <div class="d-flex">
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-end flex-wrap">
-                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 d-none d-md-block ">
-                    <i class="mdi mdi-download text-muted"></i>
-                  </button>
-                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
-                    <i class="mdi mdi-clock-outline text-muted"></i>
-                  </button>
-                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
-                    <i class="mdi mdi-plus text-muted"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+    
+         
 
           <!-- Chapter Start -->
-          <i id="chapter1" class="mdi mdi-book-open-page-variant text-muted"></i>
-          <div class="mr-md-3 mr-xl-5">
+          <div class="mr-md mr-xl-5">
             <div  class="row">
                 <div class="col-md-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h3>Chapter 1</h3>
+                          <h2><i class="mdi mdi-book-open-page-variant text-muted"></i> Chapter 1</h3>
                         <p class="mb-4">To start a blog, think of a topic about and first brainstorm party is ways to write details</p>
                         </div>
                   </div>
                 </div>
             </div>
+
           </div>
           <!-- Chapter End -->
           
@@ -469,7 +359,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-7 grid-margin stretch-card">
+            <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">Cash deposits</p>
@@ -479,7 +369,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 grid-margin stretch-card">
+            <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">Total sales</p>
