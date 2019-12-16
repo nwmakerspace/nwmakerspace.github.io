@@ -50,10 +50,6 @@
 
     //Change sidebar
 
-    $( window ).on( "load", function(){
-      body.toggleClass('sidebar-icon-only');
-    } );
-
     $('[data-toggle="minimize"]').on("click", function() {
       body.toggleClass('sidebar-icon-only');
     });
