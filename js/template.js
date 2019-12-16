@@ -54,6 +54,10 @@
       body.toggleClass('sidebar-icon-only');
     });
 
+    $('[data-toggle="maximize"]').on("click", function() {
+      body.toggleClass('');
+    });
+
     //checkbox and radios
     $(".form-check label,.form-radio label").append('<i class="input-helper"></i>');
 
